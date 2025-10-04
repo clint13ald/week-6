@@ -1,0 +1,43 @@
+/* Default (light mode) theme */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --primary-color: #0066cc;
+  --border-color: #cccccc;
+}
+
+body {
+
+    
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+    h1, h2 {
+
+  color: var(--primary-color);
+}
+
+    
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+        li {
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.5rem 0;
+}
+
+/* Dark mode automatically triggers if user’s OS is in dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --text-color: #eeeeee;
+    --primary-color: #66aaff;
+    --border-color: #333333;
+  
+}
